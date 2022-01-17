@@ -189,4 +189,8 @@ address {
   .cafe-info p {
     font-size: 1.1rem;
   }
+
+  .drink-products div, .eat-products div {
+    width: 167px;
+  }
 }
