@@ -171,7 +171,7 @@ main {
 .drink-products, .eat-products {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 1rem;
 }
 
@@ -229,5 +229,11 @@ main {
 
   .drink-products div, .eat-products div {
     width: 167px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .drink-products, .eat-products {
+    gap: 0.3rem;
   }
 }
