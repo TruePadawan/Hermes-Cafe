@@ -15,8 +15,6 @@ html {
   margin: 0;
   padding: 0;
   font-family: "PT Sans", sans-serif;
-  
-  
 }
 
 a, a:hover {
@@ -137,10 +135,12 @@ address {
   font-size: 20px;
 }
 
+main {
+  background-image: linear-gradient(45deg, #51312e, #6f4e37);
+}
 /* PRODUCTS SECTION */
 .products--section {
   padding: 10px;
-  background-image: linear-gradient(45deg, #51312e, #6f4e37);
 }
 
 .products--section h2, .gallery--section h2 {
@@ -195,11 +195,27 @@ address {
 /* GALLERY SECTION */
 .gallery--section {
   padding: 10px;
-  background-color: rgb(207, 207, 164);
 }
+
+.gallery-images {
+  background-image: linear-gradient(45deg, #432d2b, #654335);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
 .carousel {
   width: 20rem;
-  height: 15rem;
+}
+
+.gallery-images img {
+  width: 20rem;
+  height: 20rem;
 }
 
 @media only screen and (max-width: 400px) {
