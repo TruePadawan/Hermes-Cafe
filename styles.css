@@ -17,6 +17,15 @@ html {
   font-family: "PT Sans", sans-serif;
 }
 
+#theme-toggle-btn {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 18px;
+  border-color: chocolate;
+  background-color: chocolate;
+}
+
 a, a:hover {
   text-decoration: none;
   color: inherit;
