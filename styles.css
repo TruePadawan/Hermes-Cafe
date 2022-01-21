@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 
 html {
   box-sizing: border-box;
@@ -86,7 +87,7 @@ header {
   background-color: white;
   color: black;
   font-size: 80%;
-  font-family: monospace;
+  font-family: 'Dongle';
   text-align: center;
 }
 
@@ -213,8 +214,8 @@ main {
 }
 
 .drink-products li, .eat-products li {
-  font-family: monospace;
-  font-size: medium;
+  font-family: 'Dongle', sans-serif;
+  font-size: large;
   color: rgba(0, 0, 0, 0.801);
   margin: 5px 0;
   text-align: center;
@@ -232,18 +233,19 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: space-evenly;
-  width: fit-content;
+  justify-content: center;
+  width: 70rem;
+  max-width: 97%;
   margin: 0 auto;
 }
 
 .carousel {
-  width: 15rem;
+  width: 16rem;
 }
 
 .gallery-images img {
-  width: 15rem;
-  height: 15rem;
+  width: 16rem;
+  height: 16rem;
 }
 
 @media only screen and (max-width: 400px) {
