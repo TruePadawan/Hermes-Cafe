@@ -227,7 +227,8 @@ main {
 }
 
 .gallery-images {
-  background-image: linear-gradient(45deg, #432d2b, #654335);
+  background-color: #432d2b;
+  /* background-image: linear-gradient(45deg, #432d2b, #654335); */
   border-radius: 10px;
   padding: 10px;
   display: flex;
