@@ -26,6 +26,23 @@ html {
   background-color: chocolate;
 }
 
+/* .light-mode {
+  background-image: none;
+  background-color: lightgoldenrodyellow;
+}
+
+.light-mode .drink-products div, .light-mode .eat-products div {
+  background-color: aliceblue;
+}
+
+.coffee-mode {
+  background-image: linear-gradient(45deg, #51312e, #6f4e37);
+}
+
+.coffee-mode .drink-products div, .coffee-mode .eat-products div {
+  background-color: #6f4e37;
+} */
+
 a, a:hover {
   text-decoration: none;
   color: inherit;
@@ -38,7 +55,7 @@ ul {
 }
 
 header {
-  background-image: url(./resources/three-hands-coffee.jpg);
+  background-image: url(./resources/background/three-hands-coffee.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -147,6 +164,7 @@ address {
 main {
   background-image: linear-gradient(45deg, #51312e, #6f4e37);
 }
+
 /* PRODUCTS SECTION */
 .products--section {
   padding: 10px;
@@ -159,7 +177,7 @@ main {
 .products--section h4 {
   font-family: "Caveat", cursive;
   font-size: 1.7rem;
-  color: indianred;
+  color: rgb(209, 150, 40);
   padding: 5px;
   text-align: center;
 }
@@ -187,10 +205,11 @@ main {
 .drink-products div, .eat-products div {
   width: 171px;
   height: max-content;
-  padding: 5px;
   display: flex;
   flex-direction: column;
   background-color: #6f4e37;
+  border-radius: 5px;
+  box-shadow: 3px 3px #96755d;
 }
 
 .drink-products li, .eat-products li {
@@ -213,18 +232,18 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: center;
+  justify-content: space-evenly;
   width: fit-content;
   margin: 0 auto;
 }
 
 .carousel {
-  width: 20rem;
+  width: 15rem;
 }
 
 .gallery-images img {
-  width: 20rem;
-  height: 20rem;
+  width: 15rem;
+  height: 15rem;
 }
 
 @media only screen and (max-width: 400px) {
