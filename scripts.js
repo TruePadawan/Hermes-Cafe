@@ -1,4 +1,5 @@
 // VARIABLES
+let themeBtn = document.getElementById('theme-toggle-btn');
 let contactForm = document.getElementById('contact-form');
 let contactBtn = document.getElementById('contact-btn');
 let contactBtnImg = document.createElement('img');
@@ -15,4 +16,18 @@ contactForm.addEventListener('submit', (e) => {
         contactBtn.removeChild(contactBtnImg);
         contactBtn.textContent = "Send";
     }, 1000)  
+});
+
+themeBtn.addEventListener('click', () => {
+    if (themeBtn.dataset.theme == "coffee")
+    {
+        document.querySelector('main').className = "light-mode";
+        themeBtn.dataset.theme = "light";
+        themeBtn.style.backgroundColor = "chocolate";
+    }else
+    {
+        document.querySelector('main').className = "coffee-mode";
+        themeBtn.dataset.theme = "coffee";
+        themeBtn.style.backgroundColor = "white";
+    }
 });

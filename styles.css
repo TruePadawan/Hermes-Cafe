@@ -23,26 +23,9 @@ html {
   right: 10px;
   bottom: 10px;
   border-radius: 18px;
-  border-color: chocolate;
-  background-color: chocolate;
+  border-color: grey;
+  background-color: white;
 }
-
-/* .light-mode {
-  background-image: none;
-  background-color: lightgoldenrodyellow;
-}
-
-.light-mode .drink-products div, .light-mode .eat-products div {
-  background-color: aliceblue;
-}
-
-.coffee-mode {
-  background-image: linear-gradient(45deg, #51312e, #6f4e37);
-}
-
-.coffee-mode .drink-products div, .coffee-mode .eat-products div {
-  background-color: #6f4e37;
-} */
 
 a, a:hover {
   text-decoration: none;
@@ -132,7 +115,6 @@ nav a:hover {
 
 .cafe-type {
   padding: 3px;
-  /* border: 1px solid rgba(255, 255, 255, 0.529); */
   color: aliceblue;
 }
 
@@ -160,10 +142,6 @@ address {
   color: white;
   text-align: center;
   font-size: 20px;
-}
-
-main {
-  background-image: linear-gradient(45deg, #51312e, #6f4e37);
 }
 
 /* PRODUCTS SECTION */
@@ -208,7 +186,8 @@ main section h2 {
   height: max-content;
   display: flex;
   flex-direction: column;
-  background-color: #6f4e37;
+  background-color: lightgray;
+  /* background-color: #6f4e37; */
   border-radius: 5px;
   box-shadow: 3px 3px #96755d;
 }
@@ -228,7 +207,6 @@ main section h2 {
 
 .gallery-images {
   background-color: #432d2b;
-  /* background-image: linear-gradient(45deg, #432d2b, #654335); */
   border-radius: 10px;
   padding: 10px;
   display: flex;
@@ -283,7 +261,6 @@ main section h2 {
   border-radius: 5px;
   border: none;
   outline: none;
-  background-color: #6f4e37;
   height: 2rem;
   color: rgb(175, 157, 157);
   font-family: "PT Sans", sans-serif;
@@ -298,15 +275,59 @@ main section h2 {
   border: none;
   border-radius: 5px;
   padding: 5px;
-  background-color: burlywood;
+}
+
+/* LIGHT AND COFFEE THEME */
+.coffee-mode {
+  background-image: linear-gradient(45deg, #51312e, #6f4e37);
+}
+
+.coffee-mode .drink-products div, .coffee-mode .eat-products div {
+  background-color: #6f4e37;
+}
+
+.coffee-mode .gallery-images {
+    background-color: #432d2b;
+}
+
+.coffee-mode .contact--section form {
+    background-color: #96755d;
+}
+
+.coffee-mode .form-input input, .coffee-mode .form-input textarea {
+    background-color: #6f4e37;
+}
+
+.coffee-mode .contact--section form button, .light-mode .contact--section form button {
+    background-color: burlywood;
+}
+
+.light-mode {
+  background-color: lightgoldenrodyellow;
+}
+
+.light-mode .drink-products div, .light-mode .eat-products div {
+    background-color: lightgray;
+}
+
+.light-mode .gallery-images {
+    background-color: rgb(202, 202, 161);
+}
+
+.light-mode .contact--section form {
+    background-color: lightgray;
+}
+
+.light-mode .form-input input, .light-mode .form-input textarea {
+    background-color: #bd967b;
 }
 
 .contact--section form button:hover {
-  background-color: rgb(233, 170, 89);
+    background-color: rgb(233, 170, 89);
 }
 
 .contact--section form button:active {
-  background-color: burlywood;
+    background-color: burlywood;
 }
 
 @media only screen and (max-width: 400px) {
