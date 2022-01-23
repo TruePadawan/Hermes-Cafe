@@ -286,6 +286,7 @@ main section h2 {
   background-color: #6f4e37;
   height: 2rem;
   color: rgb(175, 157, 157);
+  font-family: "PT Sans", sans-serif;
 }
 
 .form-input textarea {
