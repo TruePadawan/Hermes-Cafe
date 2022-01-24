@@ -296,6 +296,7 @@ main section h2 {
 
 .coffee-mode .form-input input, .coffee-mode .form-input textarea {
     background-color: #6f4e37;
+    color:rgba(0, 0, 0, 0.815);
 }
 
 .coffee-mode .contact--section form button, .light-mode .contact--section form button {
@@ -320,6 +321,7 @@ main section h2 {
 
 .light-mode .form-input input, .light-mode .form-input textarea {
     background-color: #bd967b;
+    color:rgba(0, 0, 0, 0.815);
 }
 
 .contact--section form button:hover {
