@@ -1,0 +1,51 @@
+/* LIGHT AND COFFEE THEME */
+.coffee-mode {
+    background-image: linear-gradient(45deg, #51312e, #6f4e37);
+}
+
+.coffee-mode .drink-products div,
+.coffee-mode .eat-products div {
+    background-color: #6f4e37;
+}
+
+.coffee-mode .gallery-images {
+    background-color: #432d2b;
+}
+
+.coffee-mode .contact--section form {
+    background-color: #96755d;
+}
+
+.coffee-mode .form-input input,
+.coffee-mode .form-input textarea {
+    background-color: #6f4e37;
+    color: rgba(0, 0, 0, 0.815);
+}
+
+.coffee-mode .contact--section form button,
+.light-mode .contact--section form button {
+    background-color: burlywood;
+}
+
+.light-mode {
+    background-color: lightgoldenrodyellow;
+}
+
+.light-mode .drink-products div,
+.light-mode .eat-products div {
+    background-color: lightgray;
+}
+
+.light-mode .gallery-images {
+    background-color: rgb(202, 202, 161);
+}
+
+.light-mode .contact--section form {
+    background-color: lightgray;
+}
+
+.light-mode .form-input input,
+.light-mode .form-input textarea {
+    background-color: #bd967b;
+    color: rgba(0, 0, 0, 0.815);
+}

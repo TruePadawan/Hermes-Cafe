@@ -1,4 +1,11 @@
 // VARIABLES
+let drinkProducts = document.querySelectorAll('.drink-products div');
+let eatProducts = document.querySelectorAll('.eat-products div');
+let options = {
+    threshold: [0.85]
+};
+let observeTarget = document.querySelector('header');
+
 let themeBtn = document.getElementById('theme-toggle-btn');
 let contactForm = document.getElementById('contact-form');
 let contactBtn = document.getElementById('contact-btn');
@@ -31,3 +38,31 @@ themeBtn.addEventListener('click', () => {
         themeBtn.style.backgroundColor = "white";
     }
 });
+
+const animateProducts = (entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting)
+        {
+            eatProducts.forEach(product => {
+                product.style.opacity = "0";
+            });
+            
+            drinkProducts.forEach(product => {
+                product.style.opacity = "0";
+            });
+        }
+        else
+        {
+            eatProducts.forEach(product => {
+                product.style.opacity = "1";
+            });
+
+            drinkProducts.forEach(product => {
+                product.style.opacity = "1";
+            });
+        }
+    });
+}
+
+let observer = new IntersectionObserver(animateProducts, options);
+observer.observe(observeTarget);
